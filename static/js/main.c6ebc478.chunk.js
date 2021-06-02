@@ -1,0 +1,2 @@
+(this["webpackJsonp25-5-clock"]=this["webpackJsonp25-5-clock"]||[]).push([[0],{4:function(c,e,t){"use strict";t.r(e);t(0);var n=t(2),o=t.n(n),s=t(3);o.a.render(Object(s.jsx)("div",{}),document.getElementById("root"))}},[[4,1,2]]]);
+//# sourceMappingURL=main.c6ebc478.chunk.js.map
