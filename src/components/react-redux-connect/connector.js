@@ -29,7 +29,7 @@ const mapDispatchToProps = function(dispatch) {
             interval = setInterval(function() {
 
                 dispatch(storeRedux.startFunc(store))
-            }, 200)
+            }, 1000)
         },
         pause: function() {
             dispatch(storeRedux.pauseFunc(interval))
