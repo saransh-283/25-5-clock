@@ -18,7 +18,8 @@ const RESET = 'RESET'
 var seconds
 var minutes
 var brk
-var bg
+var colors
+var audio = document.getElementById('audio')
 
 const minIncFunc = () => {
     return {
@@ -97,18 +98,20 @@ const reducer = (state = defaultState, action) => {
 
             if (minutes == state.brkRch && !seconds) {
                 var bgInt = setInterval(() => {
-                    bg = document.body.style.background.split(' ')[0]
-                    if (bg == 'yellow') {
-                        document.body.style.background = 'white'
-                        bg = 'white'
+                    colors = document.getElementById('minutes').style.color
+                    console.log(colors)
+                    if (colors == 'rgb(224, 75, 75)') {
+                        colors = '#9fd4b8'
                     } else {
-                        document.body.style.background = 'yellow'
-                        bg = 'yellow'
+                        colors = 'rgb(224, 75, 75)'
                     }
+                    document.getElementById('minutes').style.color = colors
+                    document.getElementById('seconds').style.color = colors
                 }, 400)
                 setTimeout(() => {
-                    document.body.style.background = 'white'
-                    bg = 'white'
+                    document.getElementById('minutes').style.color = '#9fd4b8'
+                    document.getElementById('seconds').style.color = '#9fd4b8'
+                    colors = '#9fd4b8'
                     clearInterval(bgInt)
                 }, 3200)
                 return Object.assign({}, state, {

@@ -8,7 +8,8 @@ class Counter extends React.Component{
     }
     render(){
         return <div>
-            <div className="counter" id={this.props.name}>{this.props[this.props.name]}</div>
+            <div className="counter" id={this.props.name}>{String(this.props[this.props.name]).padStart(2, '0')}</div>
+            <div className="count-label">{this.props.name=='brk'?'break':this.props.name}</div>
         </div>
     }
 }

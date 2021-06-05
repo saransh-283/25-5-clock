@@ -1,0 +1,20 @@
+.count-label {
+    width: 100%;
+    text-align: center;
+    padding: 0 0 .5rem 0;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #fff;
+}
+
+.counter {
+    text-align: center;
+    font-size: 3rem;
+    font-weight: bolder;
+    letter-spacing: .2rem;
+    color: #9fd4b8;
+}
+
+#break .counter {
+    color: #aada38;
+}

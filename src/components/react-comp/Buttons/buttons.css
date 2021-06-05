@@ -1,0 +1,25 @@
+.incDec {
+    width: 100%;
+    background: #7e97c0;
+    font-size: 1.5rem;
+}
+
+.control-btn {
+    margin: 0 .5rem;
+}
+
+#break .incDec {
+    background: #a752e5;
+}
+
+#start {
+    background: #8cc310;
+}
+
+#reset {
+    background: #e6506b;
+}
+
+#pause {
+    background: #eaec68;
+}

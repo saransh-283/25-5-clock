@@ -1,48 +1,49 @@
 import React from 'react';
+import '../Buttons/buttons.css'
 
 class Button extends React.Component{
     constructor(props){
         super(props)
     }
     render(){
-        return <input disabled={this.props.disabled} id={this.props.for} type="button" onClick={this.props.click} value={this.props.text} />
+        return <button className={`${this.props.group} btn`} disabled={this.props.disabled} id={this.props.for} onClick={this.props.click}>{this.props.text}</button>
     }
 }
 
 class SecIncBtn extends React.Component{
     render(){
-        return <Button for="secInc" click={this.props.incSec} text='>'/>
+        return <Button group="incDec" for="secInc" click={this.props.incSec} text='&darr;'/>
     }
 }
 
 class SecDecBtn extends React.Component{
     render(){
-        return <Button for="secDec" click={this.props.decSec} text='<' />
+        return <Button group="incDec" for="secDec" click={this.props.decSec} text='&uarr;' />
     }
 }
 
 class MinIncBtn extends React.Component{
     render(){
-        return <Button for="minInc" click={this.props.incMin} text='>' />
+        return <Button group="incDec" for="minInc" click={this.props.incMin} text='&darr;' />
     }
 }
 
 class MinDecBtn extends React.Component{
     render(){
-        return <Button for="minDec" click={this.props.decMin} text='<' />
+        return <Button group="incDec" for="minDec" click={this.props.decMin} text='&uarr;' />
     }
 }
 
 class BrkIncBtn extends React.Component{
     render(){
-        return <Button for="brkInc" click={this.props.incBrk} text='>' />
+        return <Button group="incDec" for="brkInc" click={this.props.incBrk} text='&darr;' />
     }
 }
 // click={this.props.incMin}
 
 class BrkDecBtn extends React.Component{
     render(){
-        return <Button for="brkDec" click={this.props.decBrk} text='<' />
+        return <Button group="incDec" for="brkDec" click={this.props.decBrk} text='&uarr;' />
     }
 }
 // click={this.props.decMin}
@@ -50,19 +51,19 @@ class BrkDecBtn extends React.Component{
 
 class StartBtn extends React.Component{
     render(){
-        return <Button for="start" text='Start' click={this.props.start} />
+        return <Button group="control-btn" for="start" text={<i class="fa fa-play"></i>} click={this.props.start} />
     }
 }
 
 class ResetBtn extends React.Component{
     render(){
-        return <Button for="reset" text='Reset' click={this.props.reset} />
+        return <Button group="control-btn" for="reset" text={<i class="fa fa-refresh"></i>} click={this.props.reset} />
     }
 }
 
 class PauseBtn extends React.Component{
     render(){
-        return <Button  for="pause" text="Pause" click={this.props.pause} />
+        return <Button group="control-btn"  for="pause" text={<i class="fa fa-pause"></i>} click={this.props.pause} />
     }
 }
 
