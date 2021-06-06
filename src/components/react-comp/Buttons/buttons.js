@@ -12,38 +12,38 @@ class Button extends React.Component{
 
 class SecIncBtn extends React.Component{
     render(){
-        return <Button group="incDec" for="secInc" click={this.props.incSec} text='&darr;'/>
+        return <Button group="incDec" for="secInc" click={this.props.incSec} text='&uarr;'/>
     }
 }
 
 class SecDecBtn extends React.Component{
     render(){
-        return <Button group="incDec" for="secDec" click={this.props.decSec} text='&uarr;' />
+        return <Button group="incDec" for="secDec" click={this.props.decSec} text='&darr;' />
     }
 }
 
 class MinIncBtn extends React.Component{
     render(){
-        return <Button group="incDec" for="minInc" click={this.props.incMin} text='&darr;' />
+        return <Button group="incDec" for="minInc" click={this.props.incMin} text='&uarr;' />
     }
 }
 
 class MinDecBtn extends React.Component{
     render(){
-        return <Button group="incDec" for="minDec" click={this.props.decMin} text='&uarr;' />
+        return <Button group="incDec" for="minDec" click={this.props.decMin} text='&darr;' />
     }
 }
 
 class BrkIncBtn extends React.Component{
     render(){
-        return <Button group="incDec" for="brkInc" click={this.props.incBrk} text='&darr;' />
+        return <Button group="incDec" for="brkInc" click={this.props.incBrk} text='&uarr;' />
     }
 }
 // click={this.props.incMin}
 
 class BrkDecBtn extends React.Component{
     render(){
-        return <Button group="incDec" for="brkDec" click={this.props.decBrk} text='&uarr;' />
+        return <Button group="incDec" for="brkDec" click={this.props.decBrk} text='&darr;' />
     }
 }
 // click={this.props.decMin}

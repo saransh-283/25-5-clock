@@ -21,8 +21,6 @@ const mapStateToProps = function(state) {
     }
 }
 
-var state = store.getState()
-
 const mapDispatchToProps = function(dispatch) {
     return {
         start: function() {

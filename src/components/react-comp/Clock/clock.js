@@ -10,19 +10,19 @@ class Clock extends React.Component {
             <p id="sub-head">25+5</p>
             <div id="clock">
                 <div className="counters">
-                    <connected.MinDecBtnConnected />
-                    <connected.CounterConnected name="minutes" />
                     <connected.MinIncBtnConnected />
+                    <connected.CounterConnected name="minutes" />
+                    <connected.MinDecBtnConnected />
                 </div>
                 <div className="counters">
-                    <connected.SecDecBtnConnected />
-                    <connected.CounterConnected name="seconds" />
                     <connected.SecIncBtnConnected />
+                    <connected.CounterConnected name="seconds" />
+                    <connected.SecDecBtnConnected />
                 </div>
                 <div className="counters" id="break">
-                    <connected.BrkDecBtnConnected />
-                    <connected.CounterConnected name="brk" />
                     <connected.BrkIncBtnConnected />
+                    <connected.CounterConnected name="brk" />
+                    <connected.BrkDecBtnConnected />
                 </div>
             </div>
             <div id="controls">

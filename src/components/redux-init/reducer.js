@@ -161,7 +161,7 @@ const reducer = (state = defaultState, action) => {
             })
             break
         case SEC_DEC:
-            seconds = seconds ? seconds - 1 : 60
+            seconds = seconds ? seconds - 1 : 59
             return Object.assign({}, state, {
                 seconds
             })
